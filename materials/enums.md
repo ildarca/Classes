@@ -290,7 +290,7 @@ enum class OrderStatus {
   CANCELLED
 };
 
-void printOrderStatus(OrderStatus status) {
+void PrintOrderStatus(OrderStatus status) {
   switch(status) {
     case OrderStatus::PENDING:
       std::cout << "Заказ ожидает обработки" << std::endl;
@@ -312,10 +312,10 @@ void printOrderStatus(OrderStatus status) {
 
 int main() {
   OrderStatus order = OrderStatus::PENDING;
-  printOrderStatus(order);  // "Заказ ожидает обработки"
+  PrintOrderStatus(order);  // "Заказ ожидает обработки"
 
   order = OrderStatus::SHIPPED;
-  printOrderStatus(order);  // "Заказ отправлен"
+  PrintOrderStatus(order);  // "Заказ отправлен"
 
   return 0;
 }

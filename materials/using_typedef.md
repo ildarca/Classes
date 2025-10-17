@@ -113,7 +113,7 @@ struct Order {
   ProductList products;
 };
 
-void processOrder(const Order& order) {
+void ProcessOrder(const Order& order) {
   // Код становится более читаемым
   std::cout << "Обработка заказа #" << order.id << std::endl;
   std::cout << "Клиент: " << order.customer << std::endl;
